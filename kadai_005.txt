@@ -1,0 +1,37 @@
+yoshiokaayase@yoshiokaayaseinoMacBook-Air ~ % cd ~/Desktop
+yoshiokaayase@yoshiokaayaseinoMacBook-Air Desktop % mkdir git_challenge
+yoshiokaayase@yoshiokaayaseinoMacBook-Air Desktop % cd git_challenge
+yoshiokaayase@yoshiokaayaseinoMacBook-Air git_challenge % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /Users/yoshiokaayase/Desktop/git_challenge/.git/
+yoshiokaayase@yoshiokaayaseinoMacBook-Air git_challenge % git add .
+yoshiokaayase@yoshiokaayaseinoMacBook-Air git_challenge % git commit -m "hello追加"
+[master (root-commit) 3ba25b9] hello追加
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .DS_Store
+ create mode 100644 hello_world.txt
+yoshiokaayase@yoshiokaayaseinoMacBook-Air git_challenge % git add .
+yoshiokaayase@yoshiokaayaseinoMacBook-Air git_challenge % git commit -m "こんにちは追加"
+[master 61e3ef7] こんにちは追加
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+yoshiokaayase@yoshiokaayaseinoMacBook-Air git_challenge % git log -- hello_world.txt
+commit 61e3ef73711fb4fe4a42e1ce3ccbb8d0e83aa4b9 (HEAD -> master)
+Author: ayase1998 <caishijigang@gmail.com>
+Date:   Tue Feb 18 21:55:32 2025 +0900
+
+    こんにちは追加
+
+commit 3ba25b97a223a616f24a94c364ce1f4fc51a931b
+Author: ayase1998 <caishijigang@gmail.com>
+Date:   Tue Feb 18 21:54:28 2025 +0900
+
+    hello追加
